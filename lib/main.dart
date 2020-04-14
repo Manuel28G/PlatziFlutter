@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'description_place.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text("My Aplication") ,
         ),
-        body: Center(
-          child: Text("Hola Mundo!"),
-        )
+        body: new DescriptionPlace("Bahamas",0,"The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II")
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
