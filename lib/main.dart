@@ -1,3 +1,4 @@
+ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -18,16 +19,34 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: Scaffold(
         appBar: AppBar(
-            title: Text("My Aplication") ,
+            title: Text("MyOrderApp") ,
         ),
-        body: Center(
-          child: Text("Hola Mundo!"),
-        )
-      )//MyHomePage(title: 'Flutter Demo Home Page'),
+        body: Stack(
+          children: <Widget>[b
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/menu.jpg'),
+                      fit: BoxFit.cover)),
+            ),
+            Center(
+              child: Container(
+                height: 85.0,
+                width: double.infinity,
+                color: Colors.black.withAlpha(60),
+                child: Center(
+                  child: Text('What will you eat today?',
+                      style: TextStyle(color: Colors.brown, fontSize: 30.0),textAlign: TextAlign.center,),
+                ),
+              ),
+            ),
+          ],
+        ),
+    ),
     );
   }
 }
