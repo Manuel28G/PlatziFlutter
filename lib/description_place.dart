@@ -1,3 +1,4 @@
+import 'package:com/start_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,32 +16,6 @@ class DescriptionPlace extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    final star_half = Container(margin: EdgeInsets.only(
-      top: 323.0,
-      right:3.0,
-    ),
-      child: Icon(
-        Icons.star_half,
-        color: Color(0xFFf2C611),
-      ),);
-    final star_empty = Container(margin: EdgeInsets.only(
-      top: 323.0,
-      right:3.0,
-    ),
-      child: Icon(
-        Icons.star_border,
-        color: Color(0xFFf2C611),
-      ),);
-
-    final star = Container(margin: EdgeInsets.only(
-      top: 323.0,
-      right:3.0,
-    ),
-      child: Icon(
-        Icons.star,
-        color: Color(0xFFf2C611),
-      ),);
-
     final title_stars = Row(
       children: <Widget>[
         Container(
@@ -57,14 +32,8 @@ class DescriptionPlace extends StatelessWidget{
             ),
             textAlign: TextAlign.left,
           ),
-        ),Row(
-          children: <Widget>[
-            for(var i =0 ; i < stars; i++)
-              star,
-            for(var i = stars; i < 5; i++)
-              star_empty,
-          ],
-        )
+        ),
+        new StarComponent(stars: 4),
       ],
     );
 
@@ -73,8 +42,8 @@ class DescriptionPlace extends StatelessWidget{
       child: Text(
         descriptionPlace,
         style: TextStyle(
-          fontSize: 15.0,
-          color: Colors.black45
+            fontSize: 15.0,
+            color: Colors.black45
         ),
         textAlign: TextAlign.left,
       ),
