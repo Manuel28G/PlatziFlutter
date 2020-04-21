@@ -1,4 +1,5 @@
 
+import 'package:com/review_list.dart';
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(children: <Widget>[
           new DescriptionPlace("Bahamas",0,"The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II"),
-          new Review(),
+          new ReviewList(),
         ],)
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
