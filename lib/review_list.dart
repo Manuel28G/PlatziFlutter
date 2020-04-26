@@ -11,16 +11,16 @@ class ReviewList extends StatelessWidget{
       children: <Widget>[
         Review(getImageBaseFormat("androidDeveloper.jpeg"),
             "Manuel Goncalves","1 review 5 photos",
-            "There is an amazin place in Sri Lanka"),
+            "There is an amazin place in Sri Lanka",4),
         Review(getImageBaseFormat("traveler.jpg"),
             "Varuna Yasa","3 review 2 photos",
-            "There is an amazin place in Sri Lanka"),
+            "There is an amazin place in Sri Lanka",3),
         Review(getImageBaseFormat("traveler.jpg"),
             "Varuna Yasa","1 review 1 photos",
-            "There is an amazin place in Sri Lanka"),
+            "There is an amazin place in Sri Lanka",2),
         Review(getImageBaseFormat("traveler.jpg"),
             "Varuna Yasa","0 review 3 photos",
-            "There is an amazin place in Sri Lanka"),
+            "There is an amazin place in Sri Lanka",1),
       ],
     );
   }

@@ -6,8 +6,9 @@ class Review extends StatelessWidget{
   String nameOfUser;
   String details ;
   String comment ;
+  int numberOfStars;
 
-  Review(this.pathImage,this.nameOfUser,this.details,this.comment);
+  Review(this.pathImage,this.nameOfUser,this.details,this.comment,this.numberOfStars);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,8 @@ class Review extends StatelessWidget{
       margin: EdgeInsets.only(
           left: 20.0
       ),
-      child: Text(
+      child:
+      Text(
         comment,
         textAlign: TextAlign.left,
         style: TextStyle(
@@ -31,14 +33,19 @@ class Review extends StatelessWidget{
       margin: EdgeInsets.only(
           left: 20.0
       ),
-      child: Text(
-        details,
-        textAlign: TextAlign.left,
-        style: TextStyle(
-            fontFamily: "Lato",
-            fontSize: 13.0,
-            color: Color(0xFFa3a5a7)
-        ),
+      child: Row(
+        children: <Widget>[
+          Text(
+            details,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 13.0,
+                color: Color(0xFFa3a5a7)
+            ),
+          ),
+          new StarComponent(stars:numberOfStars,marginTop: 0.0),
+        ],
       ),
     );
 
@@ -56,7 +63,6 @@ class Review extends StatelessWidget{
           ),
         ),
       ),
-      new StarComponent(stars:1,marginTop: 0.0)
     ],
     );
 
