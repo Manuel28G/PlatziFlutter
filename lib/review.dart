@@ -2,12 +2,12 @@ import 'package:com/start_component.dart';
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget{
-  String pathImage = "assets/img/traveler.jpg";
-  String nameOfUser = "Varuna Yasa";
-  String details = "1 review 5 photos";
-  String comment = "There is an amazin place in Sri Lanka";
+  String pathImage;
+  String nameOfUser;
+  String details ;
+  String comment ;
 
-  Review();
+  Review(this.pathImage,this.nameOfUser,this.details,this.comment);
 
   @override
   Widget build(BuildContext context) {

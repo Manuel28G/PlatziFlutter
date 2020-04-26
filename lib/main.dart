@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
             title: Text("My Aplication") ,
         ),
         body: Column(children: <Widget>[
-          new DescriptionPlace("Bahamas",0,"The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II"),
-          new ReviewList(),
+          //DescriptionPlace("Bahamas",0,"The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II"),
+          ReviewList(),
         ],)
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
