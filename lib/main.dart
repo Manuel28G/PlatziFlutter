@@ -28,9 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-            title: Text("My Aplication") ,
-        ),
+
         body:
           Stack(
             children: <Widget>[
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
                         ReviewList(),
                 ],
               ),
-              GradientBack(),
+              GradientBack(title: "Popular"),
             ],
           ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
