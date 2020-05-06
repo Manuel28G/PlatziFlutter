@@ -43,6 +43,14 @@ flutter:
   assets:
     - assets/img/traveler.jpg
     - assets/img/androidDeveloper.jpeg
+    - assets/img/beach.jpeg
+    - assets/img/beach_palm.jpeg
+    - assets/img/girl.jpg
+    - assets/img/mountain.jpeg
+    - assets/img/mountain_stars.jpeg
+    - assets/img/people.jpg
+    - assets/img/river.jpeg
+    - assets/img/sunset.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
