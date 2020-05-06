@@ -1,4 +1,5 @@
 
+import 'package:com/gradient_back.dart';
 import 'package:com/review_list.dart';
 import 'package:flutter/material.dart';
 import 'description_place.dart';
@@ -6,6 +7,8 @@ import 'review.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
+  String _descriptionDummy =  "The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II";
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -28,10 +31,19 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text("My Aplication") ,
         ),
-        body: Column(children: <Widget>[
-          //DescriptionPlace("Bahamas",0,"The Bahamas, known officially as the Commonwealth of The Bahamas, is a country within the Lucayan Archipelago in the West Indies. It is a member of the Commonwealth Realms under the monarchy of Queen Elizabeth II"),
-          ReviewList(),
-        ],)
+        body:
+          Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace("Bahamas",
+                      0,_descriptionDummy),
+                        ReviewList(),
+                ],
+              ),
+              GradientBack(),
+            ],
+          ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
