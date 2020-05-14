@@ -1,6 +1,7 @@
 import 'package:com/start_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'button.dart';
 
 class DescriptionPlace extends StatelessWidget{
 
@@ -55,9 +56,11 @@ class DescriptionPlace extends StatelessWidget{
     );
 
     final content = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         title_stars,
-        description
+        description,
+        Button("Navigate")
       ],
     );
     return content;
