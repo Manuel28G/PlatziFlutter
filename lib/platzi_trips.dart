@@ -2,6 +2,7 @@ import 'package:com/home_trips.dart';
 import 'package:com/profile_trips.dart';
 import 'package:com/search_trips.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class PlatziTrips extends StatefulWidget{
 
