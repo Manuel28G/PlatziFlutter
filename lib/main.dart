@@ -37,10 +37,10 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 85.0,
                 width: double.infinity,
-                color: Colors.black.withAlpha(60),
+                color: Colors.black.withAlpha(50),
                 child: Center(
                   child: Text('What will you eat today?',
-                      style: TextStyle(color: Colors.brown, fontSize: 30.0),textAlign: TextAlign.center,),
+                      style: TextStyle(color: Colors.white, fontSize: 30.0),textAlign: TextAlign.center,),
                 ),
               ),
             ),
