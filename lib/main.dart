@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             title: Text("MyOrderApp") ,
         ),
         body: Stack(
-          children: <Widget>[b
+          children: <Widget>[
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
